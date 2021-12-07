@@ -11,20 +11,10 @@ package Composição;
  */
 public class Composicao {
     public static void main(String[] args) {
-        //1
-        Automovel uno = new Automovel();
-        Automovel gol = new Automovel(2000);
-        
-        //2
-        Automovel carro = new Automovel();
-        carro.ligarPelaPrimeiraVez();
-        carro.ligarPelaPrimeiraVez(1600);
-        
-        //3
-        Automovel moto = new Automovel();
-        Motor motor = new Motor();
-        Motor motor2 = new Motor(1000);
-        moto.setMotor
-               
+    Automovel carro = new Automovel(); 
+    Automovel carro2 = new Automovel(1600,"verde"); 
+    
+    carro.imprimeDadosCarro();
+    
     }
 }

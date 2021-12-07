@@ -11,30 +11,31 @@ package Composição;
  */
 public class Automovel {
     Motor motor;
-    private Direcao direcao;
+    Direcao direcao;
     
-    public void ligarPelaPrimeiraVez(){
+    void imprimeDadosCarro(){
+        System.out.println();
+        System.out.println("---------Carro---------");
+        System.out.println("potencia do carro: "+motor.getPotencia());
+        System.out.println("cor do carro: "+direcao.getCor());
+    }
+
+    public void ligarPelaPrimeiraVe(){
         motor = new Motor();
     }
     
-    public void ligarPelaPrimeiraVez(){
-        motor = new Motor(int potencia);
+    public void ligarPelaPrimeiraVez(int potencia){
+        motor = new Motor(potencia);
     }
     
     public Automovel(){
         motor = new Motor();
+        direcao = new Direcao();
     }
     
-    public Automovel(int potencia){
+    public Automovel(int potencia, String cor){
         motor = new Motor(potencia);
-    }
-
-    Automovel(int 1000) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void ligarPelaPrimeiraVez(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        direcao = new Direcao(cor);
     }
     
 }
